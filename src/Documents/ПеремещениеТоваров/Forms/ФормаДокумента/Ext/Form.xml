@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечать" id="73">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Печать</CommandName>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="74"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СкладОтправитель" id="7">
+			<DataPath>Объект.СкладОтправитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладОтправительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СкладОтправительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="СкладПолучатель" id="10">
+			<DataPath>Объект.СкладПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладПолучательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СкладПолучательРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Организация" id="13">
+			<DataPath>Объект.Организация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ОрганизацияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТабНоменклатураСуммаНДС1" id="64">
+			<DataPath>Items.ТабНоменклатура.CurrentData.СуммаНДС</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТабНоменклатураСуммаНДС1КонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ТабНоменклатураСуммаНДС1РасширеннаяПодсказка" id="66"/>
+		</InputField>
+		<InputField name="ТабНоменклатураСумма1" id="67">
+			<DataPath>Items.ТабНоменклатура.CurrentData.Сумма</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТабНоменклатураСумма1КонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="ТабНоменклатураСумма1РасширеннаяПодсказка" id="69"/>
+		</InputField>
+		<InputField name="Комментарий" id="16">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="ТабНоменклатура" id="19">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабНоменклатура</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабНоменклатураКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ТабНоменклатураКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="ТабНоменклатураРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ТабНоменклатураСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>ТабНоменклатура</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабНоменклатураСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ТабНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабНоменклатураСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>ТабНоменклатура</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабНоменклатураСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТабНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабНоменклатураУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>ТабНоменклатура</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабНоменклатураУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТабНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабНоменклатураНомерСтроки" id="32">
+					<DataPath>Объект.ТабНоменклатура.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТабНоменклатураНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="ТабНоменклатураНоменклатура" id="35">
+					<DataPath>Объект.ТабНоменклатура.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураНоменклатураКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТабНоменклатураНоменклатураРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ТабНоменклатураНоменклатураПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабНоменклатураЕдиницаИзмерения" id="38">
+					<DataPath>1/0:dc49cc15-e8fe-46f8-a558-84739762700a/0:823b306c-1831-445b-9556-ab9b8c31f4a3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТабНоменклатураВидНоменклатуры" id="46">
+					<DataPath>Объект.ТабНоменклатура.ВидНоменклатуры</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураВидНоменклатурыКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТабНоменклатураВидНоменклатурыРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТабНоменклатураКоличество" id="41">
+					<DataPath>Объект.ТабНоменклатура.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураКоличествоКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабНоменклатураКоличествоРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ПересчетТЧ</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабНоменклатураЦена" id="52">
+					<DataPath>Объект.ТабНоменклатура.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураЦенаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТабНоменклатураЦенаРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="OnChange">ПересчетТЧ</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабНоменклатураСтавкаНДС" id="55">
+					<DataPath>Объект.ТабНоменклатура.СтавкаНДС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураСтавкаНДСКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ТабНоменклатураСтавкаНДСРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ТабНоменклатураСуммаНДС" id="58">
+					<DataPath>Объект.ТабНоменклатура.СуммаНДС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураСуммаНДСКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ТабНоменклатураСуммаНДСРасширеннаяПодсказка" id="60"/>
+					<Events>
+						<Event name="OnChange">ПересчетТЧ</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабНоменклатураСумма" id="61">
+					<DataPath>Объект.ТабНоменклатура.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ТабНоменклатура.TotalСумма</FooterDataPath>
+					<FooterText>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итого:</v8:content>
+						</v8:item>
+					</FooterText>
+					<ContextMenu name="ТабНоменклатураСуммаКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ТабНоменклатураСуммаРасширеннаяПодсказка" id="63"/>
+					<Events>
+						<Event name="OnChange">ПересчетТЧ</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelField name="СуммаИтогоПрописью" id="70">
+			<DataPath>СуммаИтогоПрописью</DataPath>
+			<ContextMenu name="СуммаИтогоПрописьюКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="СуммаИтогоПрописьюРасширеннаяПодсказка" id="72"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПеремещениеТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="СуммаИтогоПрописью" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма итого прописью</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Печать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьНакладной</Action>
+		</Command>
+	</Commands>
+</Form>
