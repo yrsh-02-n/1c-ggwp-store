@@ -231,9 +231,10 @@
 			<CommonPicture>ИконкаОтчеты</CommonPicture>
 			<CommonPicture>ИконкаСклады</CommonPicture>
 			<CommonModule>ИтогИСумма</CommonModule>
-			<CommonModule>РаботаСЦеной</CommonModule>
-			<CommonModule>РаботаСТабличнымиЧастями</CommonModule>
 			<CommonModule>РаботаСНДС</CommonModule>
+			<CommonModule>РаботаСТабличнымиЧастями</CommonModule>
+			<CommonModule>РаботаСТабличнымиЧастямиСервер</CommonModule>
+			<CommonModule>РаботаСЦеной</CommonModule>
 			<Constant>ОргНаименование</Constant>
 			<Constant>ОргНаименованиеСокращеенное</Constant>
 			<Constant>ОргПочтовыйАдрес</Constant>
