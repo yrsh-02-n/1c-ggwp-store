@@ -140,6 +140,25 @@
 						<Event name="OnChange">ПересчетТЧ</Event>
 					</Events>
 				</InputField>
+				<InputField name="ТабНоменклатураЯчейка" id="75">
+					<DataPath>1/0:dc49cc15-e8fe-46f8-a558-84739762700a/0:bb1984ea-19fb-4e1a-b589-51976a10d86a</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабНоменклатураЯчейкаКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ТабНоменклатураЯчейкаРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ТабНоменклатураЯчейкаОтправитель" id="78">
+					<DataPath>Объект.ТабНоменклатура.ЯчейкаОтправитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.СкладОтправитель</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ТабНоменклатураЯчейкаОтправительКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ТабНоменклатураЯчейкаОтправительРасширеннаяПодсказка" id="80"/>
+				</InputField>
 				<InputField name="ТабНоменклатураЦена" id="52">
 					<DataPath>Объект.ТабНоменклатура.Цена</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -191,7 +210,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.ПеремещениеТоваров</v8:Type>
+				<v8:Type>cfg:DocumentObject.ПеремещениеТоваровМеждуСкладами</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

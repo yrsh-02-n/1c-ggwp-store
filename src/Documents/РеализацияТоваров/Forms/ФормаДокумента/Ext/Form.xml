@@ -193,6 +193,19 @@
 						<Event name="OnChange">ПересчетТЧ</Event>
 					</Events>
 				</InputField>
+				<InputField name="ТабНоменклатураЯчейка" id="99">
+					<DataPath>Объект.ТабНоменклатура.Ячейка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Склад</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ТабНоменклатураЯчейкаКонтекстноеМеню" id="100"/>
+					<ExtendedTooltip name="ТабНоменклатураЯчейкаРасширеннаяПодсказка" id="101"/>
+				</InputField>
 				<InputField name="ТабНоменклатураЦена" id="44">
 					<DataPath>Объект.ТабНоменклатура.Цена</DataPath>
 					<EditMode>EnterOnInput</EditMode>

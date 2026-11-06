@@ -235,6 +235,7 @@
 			<CommonModule>РаботаСТабличнымиЧастями</CommonModule>
 			<CommonModule>РаботаСТабличнымиЧастямиСервер</CommonModule>
 			<CommonModule>РаботаСЦеной</CommonModule>
+			<CommonModule>РаботаСОстатками</CommonModule>
 			<Constant>ОргНаименование</Constant>
 			<Constant>ОргНаименованиеСокращеенное</Constant>
 			<Constant>ОргПочтовыйАдрес</Constant>
@@ -265,6 +266,7 @@
 			<Catalog>Договоры</Catalog>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>СтавкиНДС</Catalog>
+			<Catalog>Ячейки</Catalog>
 			<Document>ПоступлениеТоваров</Document>
 			<Document>РеализацияТоваров</Document>
 			<Document>ЗаказТоваров</Document>
@@ -272,7 +274,8 @@
 			<Document>ОказаниеУслуг</Document>
 			<Document>РегистрацияЦен</Document>
 			<Document>ВыпискаБанка</Document>
-			<Document>ПеремещениеТоваров</Document>
+			<Document>ПеремещениеТоваровМеждуСкладами</Document>
+			<Document>ПеремещениеТоваровМеждуЯчейками</Document>
 			<DocumentJournal>ТорговоЗакупочный</DocumentJournal>
 			<DocumentJournal>ОбщийЖурнал</DocumentJournal>
 			<Enum>ВидыНоменклатуры</Enum>
@@ -284,6 +287,7 @@
 			<Report>НоменклатураКонтрагентов</Report>
 			<Report>ОстаткиТоваров</Report>
 			<Report>ПродажиТоваров</Report>
+			<Report>ОстаткиТоваровПоЯчейкам</Report>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>

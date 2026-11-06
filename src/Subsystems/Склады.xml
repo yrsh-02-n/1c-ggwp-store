@@ -22,12 +22,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваров</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваровМеждуСкладами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ТорговоЗакупочный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокНоменклатуры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.НоменклатураКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиТоваров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ПродажиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Ячейки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиТоваровПоЯчейкам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваровМеждуЯчейками</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
