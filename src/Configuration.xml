@@ -236,6 +236,7 @@
 			<CommonModule>РаботаСТабличнымиЧастямиСервер</CommonModule>
 			<CommonModule>РаботаСЦеной</CommonModule>
 			<CommonModule>РаботаСОстатками</CommonModule>
+			<CommonModule>РаботаСФормами</CommonModule>
 			<Constant>ОргНаименование</Constant>
 			<Constant>ОргНаименованиеСокращеенное</Constant>
 			<Constant>ОргПочтовыйАдрес</Constant>
